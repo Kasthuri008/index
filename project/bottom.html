@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1{
+            background-color: seashell;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 30px;
+            color: #c2185b;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+         #bottom{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:repeat(3,auto);
+            gap:30px;
+            padding: 30px;
+            justify-items: center;
+         }
+       .btn{
+        background-color: #ff4d4d;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+
+        }
+        .btn:hover{
+            background-color: #cc0000;
+        }
+         .product img{
+            border-radius: 20px;
+            margin-bottom: 10px;
+
+        }
+        .product p {
+            margin:10px 0;
+            text-align: center;
+            font-size: 20px;
+        }
+     </style>
+    </head>
+<body>
+  <h1>Bottom</h1>
+    <div id="bottom">
+    <div class="product">
+      <img src="bottom1.jpg" alt="bot1" height="400px" width="300px">
+      <p>$1,299</p>
+      <p>Karan women cotton blend</p>
+      <p>size: 
+        <button>28</button>
+        <button>30</button>
+         <button>32</button>
+        <button>34</button><br><br>
+      <button class="btn">Buy now</button>
+    </p>
+      </div>
+       <div class="product">
+      <img src="bottom2.jpg" alt="bot1" height="400px" width="300px">
+      <p>$1,999</p>
+      <p>Cropped straight leg</p>
+      <p>size: 
+        <button>28</button>
+        <button>30</button>
+         <button>32</button>
+        <button>34</button><br><br>
+      <button class="btn">Buy now</button>
+
+    </p>
+      </div>
+      <div class="product">
+      <img src="bottom3.jpg" alt="bot1" height="400px" width="300px">
+      <p>$1,199</p>
+      <p> Women Flared light blue jeans</p>
+      <p>size: 
+        <button>28</button>
+        <button>30</button>
+         <button>32</button>
+        <button>34</button><br><br>
+      <button class="btn">Buy now</button>
+    </p>
+       </div>
+    </div>
+      <h1>Bottom</h1>
+    <div id="bottom">
+    <div class="product">
+      <img src="bottom4.jpg" alt="bot1" height="400px" width="300px">
+      <p>$1,399</p>
+      <p>Women Slim fit Black</p>
+      <p>size: 
+        <button>28</button>
+        <button>30</button>
+         <button>32</button>
+        <button>34</button><br><br>
+      <button class="btn">Buy now</button>
+    </p>
+      </div>
+       <div class="product">
+      <img src="bottom6.jpg" alt="bot1" height="400px" width="300px">
+      <p>$1,599</p>
+      <p>Flared High Grey jeans</p>
+      <p>size: 
+        <button>28</button>
+        <button>30</button>
+         <button>32</button>
+        <button>34</button><br><br>
+      <button class="btn">Buy now</button>
+
+    </p>
+      </div>
+      <div class="product">
+      <img src="bottom7.jpg" alt="bot1" height="400px" width="300px">
+      <p>$1,699</p>
+      <p>Regular mid Rise White Jeans</p>
+      <p>size: 
+        <button>28</button>
+        <button>30</button>
+         <button>32</button>
+        <button>34</button><br><br>
+      <button class="btn">Buy now</button>
+    </p>
+       </div>
+    </div>
+    <script>
+    window.onload = function () {
+      const buttons = document.querySelectorAll('.btn');
+      buttons.forEach(button => {
+        button.addEventListener('click', function () {
+          alert("Thank you Your item is Added to Card");
+        });
+      });
+    };
+  </script>
+</body>
+</html>
